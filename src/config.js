@@ -1,18 +1,21 @@
 const config = {
+  MAX_ATTACHMENT_SIZE: 5000000,
   s3: {
-    REGION: 'YOUR_S3_UPLOADS_BUCKET_REGION',
-    BUCKET: 'YOUR_S3_UPLOADS_BUCKET_NAME',
+    REGION: 'ap-northeast-1',
+    BUCKET: 'hai-notes-app-bucket',
   },
   apiGateway: {
-    REGION: 'YOUR_API_GATEWAY_REGION',
-    URL: 'YOUR_API_GATEWAY_URL',
+    REGION: 'ap-northeast-1',
+    URL: 'https://13ulh5at4d.execute-api.ap-northeast-1.amazonaws.com/prod',
   },
   cognito: {
-    REGION: 'ap-southeast-1',
-    USER_POOL_ID: 'ap-southeast-1_shbaqwQz2',
-    APP_CLIENT_ID: '41s7bhjb49q7122k43vlvsfj70',
-    IDENTITY_POOL_ID: 'ap-southeast-1:0267a27a-914b-4161-96f0-b9c6f9ea64d5',
+    REGION: 'ap-northeast-1',
+    USER_POOL_ID: 'ap-northeast-1_xPY3Kk4l3',
+    APP_CLIENT_ID: '60l1igjprjp2ospg07kelpgrtj',
+    IDENTITY_POOL_ID: 'ap-northeast-1:ebec81b4-5a79-4e99-90b1-66221cba5e15',
   },
+  STRIPE_KEY:
+    'pk_test_51J0eyZKe7AAKIoSDZWmPMKRUQvDy49zS2Ru1W4eDCgl7gj3C2gMNuxwLn6JKwpuVRD4RNVXLb7TnlMivNkjT5XiG00qpHQwkOa',
 };
 
 export default config;
